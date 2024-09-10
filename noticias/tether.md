@@ -2,6 +2,9 @@
 
 src: [source](https://www.criptonoticias.com/negocios/usdt-100-millones-empresa-argentina/) 
 
+![Theter Image](../img/tether.jpg)
+
+
 Hechos clave:
 
 - Tether quiere diversificar sus inversiones en los sectores agrícola y alimentario.
