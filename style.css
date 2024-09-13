@@ -56,3 +56,55 @@ h1 {
     border: 1px solid black;
     min-height: 45%;
 }
+
+/* FOOTER */
+footer { /* Estilos del footer */
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-top: 40px;
+    color: black;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.footer-contenedor { /* Contenedor para todo el footer */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contactos-nosotros { /* Contenedores para Contactos y ¿Quienes Somos? */
+    width: 45%; 
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.listas-none{
+    list-style: none;
+}
+
+.redes { /* Contenedor para "Redes Sociales" */
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;  
+}
+
+.redes ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 0% 33%;
+}
+
+#copyright { /* Sección Copyright */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 13px;
+}
