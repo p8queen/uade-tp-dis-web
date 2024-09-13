@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+/* nav en horizontal usando flex */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #333;
+    list-style-type: none;
+}
+
+nav li {
+    flex-grow: 1;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+h1 {
+    text-align: center;
+}
+#destacados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: grey;
+}
+
+#destacados div {
+    width: 33%;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.destacada-izq{
+    /*  distribicion de elementos en una columna uniformemente (filas iguales ) */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.destacada-izq article {
+    padding: 5px;
+    border: 1px solid black;
+    min-height: 45%;
+}
