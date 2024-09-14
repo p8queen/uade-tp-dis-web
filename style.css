@@ -35,7 +35,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: grey;
+    background-color: #f4f4f4;
 }
 
 #destacados div {
@@ -53,10 +53,30 @@ h1 {
 
 .destacada-izq article {
     padding: 5px;
-    border: 1px solid black;
     min-height: 45%;
 }
 
+.destacada-der {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+    }
+
+.destacada-der article {
+    padding: 5px;
+    min-height: 10%;
+}
+#destacados h2 {
+    background-color: #e0e0e0;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+#destacados article { 
+    box-shadow: 4px 4px lightgrey;
+    border-radius: 8px;
+    border: 1px solid black;
+}
 /* NOTICIAS GENERALES (MAIN)*/
 #generales {
     display: flex;
