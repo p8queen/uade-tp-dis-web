@@ -44,6 +44,9 @@ h1 {
     border: 1px solid black;
 }
 
+.destacada-centro article{
+    min-height: 100%;
+}
 .destacada-izq{
     /*  distribicion de elementos en una columna uniformemente (filas iguales ) */
     display: flex;
@@ -59,13 +62,14 @@ h1 {
 .destacada-der {
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
     }
 
 .destacada-der article {
-    padding: 5px;
-    min-height: 10%;
+    margin: 1%;
+    padding: 1px;
 }
+
 #destacados h2 {
     background-color: #e0e0e0;
     border-radius: 8px 8px 0 0;
@@ -73,10 +77,13 @@ h1 {
 }
 
 #destacados article { 
-    box-shadow: 4px 4px lightgrey;
-    border-radius: 8px;
+        border-radius: 8px;
     border: 1px solid black;
 }
+#destacados article:hover {
+box-shadow: 4px 4px 0 0 grey;
+}
+
 /* NOTICIAS GENERALES (MAIN)*/
 #generales {
     display: flex;
