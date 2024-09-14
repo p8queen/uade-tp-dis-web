@@ -35,7 +35,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: grey;
+    background-color: #f4f4f4;
 }
 
 #destacados div {
@@ -44,8 +44,11 @@ h1 {
     border: 1px solid black;
 }
 
+.destacada-centro article{
+    min-height: 100%;
+}
 .destacada-izq{
-    /*  distribicion de elementos en una columna uniformemente (filas iguales ) */
+    /*  distribicion de elementos en una columna uniformemente (filas iguales) */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -53,17 +56,45 @@ h1 {
 
 .destacada-izq article {
     padding: 5px;
-    border: 1px solid black;
     min-height: 45%;
 }
 
+.destacada-der {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+.destacada-der article {
+    margin: 1%;
+    padding: 1px;
+}
+
+#destacados h2 {
+    background-color: #e0e0e0;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+#destacados article { 
+        border-radius: 8px;
+    border: 1px solid black;
+}
+#destacados article:hover {
+box-shadow: 4px 4px 0 0 grey;
+}
+
 /* NOTICIAS GENERALES (MAIN)*/
-main {
+#generales {
     display: flex;
     justify-content: space-between;
     margin: 20px;
     color: black;
     background-color: #f1f1f1;
+}
+
+h2.ocultar { /* Oculto el título en el front pero lo dejo en HTML */
+    display: none;
 }
 
 .columnas-main {
@@ -163,4 +194,15 @@ h3 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     font-size: 13px;
+}
+
+.titulos-generales h3 {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin: 5px 5px;
+}
+
+.fotos-tecnologia {
+    max-height: 160px;
 }
