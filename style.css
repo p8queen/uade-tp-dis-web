@@ -58,7 +58,7 @@ h1 {
 }
 
 /* NOTICIAS GENERALES (MAIN)*/
-main {
+#generales {
     display: flex;
     justify-content: space-between;
     margin: 20px;
