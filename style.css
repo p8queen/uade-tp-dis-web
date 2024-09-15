@@ -9,6 +9,8 @@ nav ul {
     justify-content: space-between;
     background-color: #333;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
@@ -30,6 +32,39 @@ nav li a:hover {
 h1 {
     text-align: center;
 }
+
+/* Título + Logo */ 
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-size: xx-large;
+}
+
+.titulo img {
+    max-width: 250px;
+    height: auto;
+}
+
+.titulo h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.silkscreen-regular { /* Fuente que exporté de Google Fonts para el título de la web */
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 #destacados {
     display: flex;
     flex-direction: row;
@@ -103,11 +138,11 @@ h2.ocultar { /* Oculto el título en el front pero lo dejo en HTML */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #e0e0e0; 
+    background-color: #e0e0e0;
     padding: 5px;
     border-radius: 10px;
-    height: auto; 
-}    
+    height: auto;
+}
 
 .columnas-main h2 {
     font-size: 1.5em;
@@ -115,83 +150,119 @@ h2.ocultar { /* Oculto el título en el front pero lo dejo en HTML */
     text-align: center;
 }
 
-.cripto-news, .tecnologia-news, .ciber-news {
+/* Estilos para las noticias de criptomonedas */
+.cripto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cripto-news {
     background-color: #f4f4f4;
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 15px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: space-between;
-    height: 100%; 
-    max-height: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cripto-news img {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    border-radius: 8px;
 }
 
-.cripto-news h3, .tecnologia-news h3, .ciber-news h3 {
+.cripto-news h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-.cripto-news p, .tecnologia-news p, .ciber-news p {
+.cripto-news p {
     font-size: 1em;
     line-height: 1.4;
 }
 
+/* Estilos para las noticias tecnológicas y de ciberseguridad */
+.tecnologia-news, .ciber-news {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tecnologia-news img, .ciber-news img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tecnologia-news h3, .ciber-news h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.tecnologia-news p, .ciber-news p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+#generales article:hover {
+    box-shadow: 4px 4px 4px 4px grey;
+}
+
 /* FOOTER */
-footer { /* Estilos del footer */
+footer {
     background-color: #f1f1f1;
     padding: 20px;
     margin-top: 40px;
     color: black;
 }
 
-h3 {
-    margin-top: 0;
-}
-
-.footer-contenedor { /* Contenedor para todo el footer */
+.footer-contenedor { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.contactos-nosotros { /* Contenedores para Contactos y ¿Quienes Somos? */
-    width: 45%; 
+.contactos-nosotros {
+    width: 45%;
     background-color: #ffffff;
     padding: 20px;
     margin-bottom: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.listas-none{
+.listas-none {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.redes { /* Contenedor para "Redes Sociales" */
+.redes {
     width: 100%;
     background-color: #ffffff;
     padding: 20px;
     margin-top: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;  
+    text-align: center;
 }
 
 .redes ul {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   margin: 0% 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
 }
 
 #copyright { /* Sección Copyright */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     font-size: 13px;
 }
