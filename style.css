@@ -71,12 +71,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #f4f4f4;
+    
 }
 
 #destacados section {
     width: 33%;
     padding: 5px;
-    border: 1px solid black;
 }
 
 .destacada-centro article{
