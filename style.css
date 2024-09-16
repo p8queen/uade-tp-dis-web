@@ -233,6 +233,36 @@ footer {
     color: black;
 }
 
+footer h2 { 
+    display: flex;
+    justify-content: center;
+}
+
+/* Fuente desde Google Fonts con su diferentes variantes */
+.quantico-regular {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .quantico-bold {
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .quantico-regular-italic {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .quantico-bold-italic {
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
 .footer-contenedor { 
     display: flex;
     flex-wrap: wrap;
@@ -271,9 +301,9 @@ footer {
 }
 
 #copyright { /* Sección Copyright */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Quantico";
     font-style: italic;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .titulos-generales h3 {
@@ -286,3 +316,4 @@ footer {
 .fotos-tecnologia {
     max-height: 160px;
 }
+
