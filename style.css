@@ -79,8 +79,9 @@ body {
     padding: 5px;
 }
 
-.destacada-centro article{
-    min-height: 100%;
+#destacados .destacada-centro-texto {
+    height: 700px;
+    overflow: hidden;
 }
 .destacada-izq{
     /*  distribicion de elementos en una columna uniformemente (filas iguales) */
