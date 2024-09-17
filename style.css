@@ -77,6 +77,11 @@ h1 {
     text-align: center;
 }
 
+a:hover, a:active, a:visited { /* No desaparece la línea de los hipervínculos (?)*/
+    text-decoration: none !important;
+    color: inherit;
+}
+
 /* Título + Logo */ 
 .titulo {
     display: flex;
