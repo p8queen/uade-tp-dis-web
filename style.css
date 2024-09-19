@@ -1,3 +1,40 @@
+/* Fuente desde Google Fonts con su diferentes variantes */
+.quantico-regular {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .quantico-bold {
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .quantico-regular-italic {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .quantico-bold-italic {
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+.silkscreen-regular { /* Fuente que exporté de Google Fonts para el título de la web */
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.jersey-15-regular {
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+/* --------------------------------------------------------- */
 * {
     box-sizing: border-box;
 }
@@ -140,8 +177,16 @@ box-shadow: 4px 4px 0 0 grey;
     }
 
   }
-
+/* --------------------------------------------------------- */
 /* NOTICIAS GENERALES (MAIN)*/
+main h2,
+#generales h3 {
+    font-family: "Jersey 15", sans-serif;
+    font-size: 30px;
+    background-color: #e0e0e0;
+    border-radius: 1%;
+}
+
 #generales {
     display: flex;
     justify-content: space-between;
@@ -155,16 +200,16 @@ h2.ocultar { /* Oculto el título en el front pero lo dejo en HTML */
 }
 
 .columnas-main {
-    /* flex: 1; */
-    margin: 15px;
+    flex: 1;
+    margin: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #e0e0e0;
     padding: 5px;
     border-radius: 10px;
-    width: 33%;
     height: auto;
+    border: 3px solid black;
 }
 
 .columnas-main h2 {
@@ -173,7 +218,6 @@ h2.ocultar { /* Oculto el título en el front pero lo dejo en HTML */
     text-align: center;
 }
 
-/* Estilos para las noticias de criptomonedas */
 .cripto-container {
     display: flex;
     flex-direction: column;
@@ -189,6 +233,7 @@ h2.ocultar { /* Oculto el título en el front pero lo dejo en HTML */
     flex-direction: column;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
 }
 
 .cripto-news img {
@@ -207,7 +252,6 @@ h2.ocultar { /* Oculto el título en el front pero lo dejo en HTML */
     line-height: 1.4;
 }
 
-/* Estilos para las noticias tecnológicas y de ciberseguridad */
 .tecnologia-news, .ciber-news {
     background-color: #f4f4f4;
     padding: 20px;
@@ -217,6 +261,7 @@ h2.ocultar { /* Oculto el título en el front pero lo dejo en HTML */
     flex-direction: column;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
 }
 
 .tecnologia-news img, .ciber-news img {
@@ -239,14 +284,32 @@ h2.ocultar { /* Oculto el título en el front pero lo dejo en HTML */
     box-shadow: 4px 4px 4px 4px grey;
 }
 
+.titulos-generales h3 {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin: 5px 5px;
+}
+
+.fotos-tecnologia {
+    max-height: 160px;
+}
+/* --------------------------------------------------------- */
 /* FOOTER */
 footer {
     background-color: #f1f1f1;
-    padding: 20px;
+    padding: 25px;
     margin-top: 40px;
     color: black;
+    
 }
 
+footer h2, h3 { 
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+ 
 .footer-contenedor { 
     display: flex;
     flex-wrap: wrap;
@@ -259,6 +322,7 @@ footer {
     padding: 20px;
     margin-bottom: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid black;
 }
 
 .listas-none {
@@ -274,6 +338,7 @@ footer {
     margin-top: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    border: 3px solid black;
 }
 
 .redes ul {
@@ -282,30 +347,24 @@ footer {
     justify-content: space-around;
     padding: 0;
     margin: 0;
+    align-items: center;
+    list-style-type: none;
+}
+
+.redes li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 30px;
+}
+
+.redes img {
+  width: 20px;
+  margin: 10px;
 }
 
 #copyright { /* Sección Copyright */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Quantico";
     font-style: italic;
-    font-size: 13px;
+    font-size: 15px;
 }
-
-.titulos-generales h3 {
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    margin: 5px 5px;
-}
-
-.fotos-tecnologia {
-    max-height: 160px;
-}
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    #generales .columnas-main {
-        width: 80%;
-        padding: 5px;
-    }
-
-  }
