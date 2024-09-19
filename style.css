@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
 /* Fuente desde Google Fonts con su diferentes variantes */
 .quantico-regular {
     font-family: "Quantico", sans-serif;
@@ -395,21 +400,19 @@ footer h2, h3 {
     font-size: 15px;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+  @media only screen and (max-width: 768px) {
     .columnas-main {
         width: 100% !important;
         padding: 5px !important; 
     }
-  }
-
-  @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
     .footer-contenedor {
         width: 100% !important;
         padding: 5px !important; 
     }
     li.ocultar {
         display: none;
+    }
+    .titulo {
+        font-size: medium;
     }
   }
