@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
 /* nav en horizontal usando flex */
 nav ul {
     display: flex;
@@ -80,6 +79,8 @@ body {
     padding: 5px;
 }
 
+
+
 #destacados .destacada-centro-texto {
     height: 700px;
     overflow: hidden;
@@ -130,6 +131,16 @@ box-shadow: 4px 4px 0 0 grey;
     margin: 5%;
     border-radius: 4px;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #destacados section {
+        width: 100%;
+        padding: 5px;
+    }
+
+  }
+
 /* NOTICIAS GENERALES (MAIN)*/
 #generales {
     display: flex;
@@ -144,7 +155,7 @@ h2.ocultar { /* Oculto el título en el front pero lo dejo en HTML */
 }
 
 .columnas-main {
-    flex: 1;
+    /* flex: 1; */
     margin: 15px;
     display: flex;
     flex-direction: column;
@@ -152,6 +163,7 @@ h2.ocultar { /* Oculto el título en el front pero lo dejo en HTML */
     background-color: #e0e0e0;
     padding: 5px;
     border-radius: 10px;
+    width: 33%;
     height: auto;
 }
 
@@ -288,3 +300,12 @@ footer {
 .fotos-tecnologia {
     max-height: 160px;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #generales .columnas-main {
+        width: 80%;
+        padding: 5px;
+    }
+
+  }
