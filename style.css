@@ -77,9 +77,13 @@ h1 {
     text-align: center;
 }
 
-a:hover, a:active, a:visited { /* No desaparece la línea de los hipervínculos (?)*/
+a { /* No desaparece la línea de los hipervínculos (?)*/
     text-decoration: none !important;
     color: inherit;
+}
+
+main p, ul {
+    font-family: "Quantico", sans-serif;
 }
 
 /* Título + Logo */ 
@@ -103,10 +107,6 @@ a:hover, a:active, a:visited { /* No desaparece la línea de los hipervínculos 
     margin: 0;
 }
 
-main p, ul {
-    font-family: "Quantico", sans-serif;
-}
-
 #destacados {
     display: flex;
     flex-direction: row;
@@ -124,9 +124,11 @@ main p, ul {
     border-radius: 1%;
 }
 
-.destacada-centro article{
-    min-height: 100%;
+#destacados .destacada-centro-texto {
+    height: 700px;
+    overflow: hidden;
 }
+
 .destacada-izq{
     /*  distribicion de elementos en una columna uniformemente (filas iguales) */
     display: flex;
@@ -173,6 +175,13 @@ box-shadow: 4px 4px 0 0 grey;
     width: 90%;
     margin: 5%;
     border-radius: 4px;
+}
+
+@media only screen and (max-widht: 768px) {
+    #destacados section {
+        width: 100%;
+        padding: 5px;
+    }
 }
 /* --------------------------------------------------------- */
 /* NOTICIAS GENERALES (MAIN)*/
