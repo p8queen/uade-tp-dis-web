@@ -35,18 +35,47 @@
     font-style: normal;
   }  
 /* --------------------------------------------------------- */
+/* Fuente desde Google Fonts con su diferentes variantes */
+.quantico-regular {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .quantico-bold {
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .quantico-regular-italic {
+    font-family: "Quantico", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .quantico-bold-italic {
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+.silkscreen-regular { /* Fuente que exporté de Google Fonts para el título de la web */
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.jersey-15-regular {
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+/* --------------------------------------------------------- */
 * {
     box-sizing: border-box;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #f1f1f1;
-    min-height: 100vh;
-}
-
-/* Nav en horizontal usando flex */
+/* nav en horizontal usando flex */
 nav ul {
     display: flex;
     flex-direction: row;
@@ -77,21 +106,12 @@ h1 {
     text-align: center;
 }
 
-a { /* No desaparece la línea de los hipervínculos (?)*/
-    text-decoration: none !important;
-    color: inherit;
-}
-
-main p, ul {
-    font-family: "Quantico", sans-serif;
-}
-
 /* Título + Logo */ 
 .titulo {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 10px 50px;
+    padding: 10px 20px;
     margin: 0 auto;
     max-width: 1200px;
     font-size: xx-large;
@@ -107,28 +127,28 @@ main p, ul {
     margin: 0;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #destacados {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #f4f4f4;
-    margin: 25px;
-    border-radius: 10%;
 }
 
 #destacados section {
     width: 33%;
     padding: 5px;
-    border: 3px solid black;
-    border-radius: 1%;
 }
 
 #destacados .destacada-centro-texto {
     height: 700px;
     overflow: hidden;
 }
-
 .destacada-izq{
     /*  distribicion de elementos en una columna uniformemente (filas iguales) */
     display: flex;
@@ -156,7 +176,6 @@ main p, ul {
     background-color: #e0e0e0;
     border-radius: 8px 8px 0 0;
     text-align: center;
-    border-radius: 1%;
 }
 
 #destacados article { 
@@ -177,12 +196,13 @@ box-shadow: 4px 4px 0 0 grey;
     border-radius: 4px;
 }
 
-@media only screen and (max-widht: 768px) {
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
     #destacados section {
         width: 100%;
         padding: 5px;
     }
-}
+  }
 /* --------------------------------------------------------- */
 /* NOTICIAS GENERALES (MAIN)*/
 main h2,
