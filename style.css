@@ -254,6 +254,7 @@ h2.ocultar { /* Se oculta el título en el front */
 }
 
 .fotos-tecnologia {
+    width: 80%;
     margin: 4px;
     max-height: 150px;
     border-radius: 4px;
