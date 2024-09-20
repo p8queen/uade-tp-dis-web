@@ -2,12 +2,12 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
+a { /* Le quitamos el underline a todos los links */
+    text-decoration: none !important;
     color: inherit;
 }
 
-body {
+body { 
     background-color: #f1f1f1;
     margin: 0;
     padding: 0;
@@ -265,7 +265,6 @@ footer {
     padding: 25px;
     margin-top: 40px;
     color: black;
-    
 }
 
 footer h2, h3 { 
@@ -273,15 +272,16 @@ footer h2, h3 {
     justify-content: center;
     font-size: 25px;
 }
- 
+
 .footer-contenedor { 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 20px;
 }
 
 .contactos-nosotros {
-    width: 45%;
+    width: 45%; /* Mantén el ancho para pantallas grandes */
     background-color: #ffffff;
     padding: 20px;
     margin-bottom: 10px;
@@ -358,7 +358,7 @@ footer h2, h3 {
 /* --------------------------------------------------------- */
 /* Responsive probado en Edge y Fireforx */
   @media only screen and (max-width: 768px) {
-    .titulo {
+    .titulo { /* Responsive para el título de la web */
         font-size: medium;
     }
     #destacados section {
@@ -379,6 +379,16 @@ footer h2, h3 {
     .redes ul {
     flex-direction: row;
     justify-content: center;
+    }
+    .footer-contenedor { /* Responsive para "Contactos" y "¿Quiénes somos?" */
+        flex-direction: column; 
+        margin: 0; 
+    }
+
+    .contactos-nosotros {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
   }
   /* --------------------------------------------------------- */
